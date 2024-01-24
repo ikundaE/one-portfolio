@@ -16,7 +16,7 @@ function SocialLinks() {
         {
             id: 2,
             child: (
-                <>LinkedIn <FaGithub size={30}/> </>
+                <>Github <FaGithub size={30}/> </>
             ),
             href: 'https://github.com/ikundaE',
         },

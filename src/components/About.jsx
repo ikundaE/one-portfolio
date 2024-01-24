@@ -21,12 +21,20 @@ function About() {
                 </p>
                 <br />
 
-                <p className='text-xl'>
+                <p className='text-xl '>
                     Lacking a career coach, I navigate my professional
                     path independently, occasionally facing challenges
                     due to a lack of guidance. However, I am resilient
                     and believe that my success story will illuminate
                     a path for aspiring individuals in my community.
+                </p>
+                <br />
+
+                <p className='text-xl'>
+                    As a future software engineer, I aim to become a
+                    role model for those who lack mentors, contributing
+                    to the growth and inspiration of
+                    young talents in our community.
                 </p>
             </div>
         </div>
