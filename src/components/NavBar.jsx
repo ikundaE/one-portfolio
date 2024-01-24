@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
-function NavBar() {
+function NavBar({darkMode, handleThemeChange}) {
 
     const [nav, setNav] = useState(false)
     const links = [
@@ -29,10 +29,17 @@ function NavBar() {
         }
     ]
     return (
-        <div className='flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed'>
+        <div className='flex justify-between items-center w-full h-20 px-4 fixed'>
             <div>
                 <h1 className='text-5xl font-signature ml-2'>Enoch</h1>
             </div>
+
+            <button
+                name='theme-button'
+                onClick={handleThemeChange}
+                className={`bg-green-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300`}>
+                    {darkMode ? '⚪' : '⚫'}
+            </button>
 
             <ul className='hidden md:flex'>
                 {
@@ -48,8 +55,7 @@ function NavBar() {
 
             {nav && (
 
-            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 
-            text-gray-500'>
+            <ul className='flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500'>
                 {
                     links.map ( ({id, link}) => (
                         <li key={id}className='px-4 cursor-pointer capitalize py-6 text-4xl'> 
@@ -59,7 +65,7 @@ function NavBar() {
             </ul>
             )}
         </div>
-    )
-}
+    );
+};
 
 export default NavBar

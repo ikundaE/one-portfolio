@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div name='about' className='w-full h-screen bg-gradient-to-b from-gray-800 to to-black text-white'>
+        <div name='about' className='w-full h-screen'>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
@@ -10,19 +10,23 @@ function About() {
                     </p>
                 </div>
                 <p className='text-xl mt-20'>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                    Voluptatum eaque, itaque fugit est consequuntur quos, d
-                    olorem laborum ut reprehenderit exercitationem eveniet sequi 
-                    facilis blanditiis? Tenetur explicabo vitae dolor quae incidunt.
+                    In the pursuit of my undergraduate degree,
+                    I dedicated nearly 80 hours a week to work,
+                    displaying unwavering commitment. Remarkably,
+                    I emerged from undergrad without any debt,
+                    showcasing financial acumen. Recognizing the
+                    need to enhance my skill set, I enrolled in
+                    a full-stack bootcamp, demonstrating a proactive
+                    approach to self-improvement.
                 </p>
-
                 <br />
 
                 <p className='text-xl'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    At, dignissimos ea aut dolores perferendis corrupti eius 
-                    consequuntur doloribus expedita saepe et animi qui illo c
-                    upiditate voluptatum modi distinctio sapiente cum!
+                    Lacking a career coach, I navigate my professional
+                    path independently, occasionally facing challenges
+                    due to a lack of guidance. However, I am resilient
+                    and believe that my success story will illuminate
+                    a path for aspiring individuals in my community.
                 </p>
             </div>
         </div>
