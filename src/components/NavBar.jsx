@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaMoon, FaRegSun } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 function NavBar({darkMode, handleThemeChange}) {
@@ -29,7 +29,7 @@ function NavBar({darkMode, handleThemeChange}) {
         }
     ]
     return (
-        <div className='flex justify-between items-center w-full h-20 px-4 fixed'>
+        <div className='flex justify-between items-center w-full h-20 px-4 fixed '>
             <div>
                 <h1 className='text-5xl font-signature ml-2'>Enoch</h1>
             </div>
@@ -38,7 +38,7 @@ function NavBar({darkMode, handleThemeChange}) {
                 name='theme-button'
                 onClick={handleThemeChange}
                 className={`bg-green-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300`}>
-                    {darkMode ? '⚪' : '⚫'}
+                    {darkMode ? <FaRegSun/> : <FaMoon/>}
             </button>
 
             <ul className='hidden md:flex'>

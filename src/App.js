@@ -5,7 +5,7 @@ import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-// import Portfolio from "./components/Portfolio";
+import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 
 
@@ -36,18 +36,11 @@ function App() {
     
   return (
     <>
-      {/* <button
-        type="button"
-        onClick={handleThemeChange}
-        className="fixed bg-green-500 right-2 rounded-md cursor-pointer"
-      >
-        {theme === 'dark' ? '⚫': '⚪'}
-      </button> */}
-      <div className={`bg:white dark:bg-black text-black dark:text-white`}>
+      <div className={`bg:white dark:bg-black text-black dark:text-white bg-opacity-50`}>
         <NavBar darkMode={theme === 'dark'} handleThemeChange={handleThemeChange}/>
         <Home />
         <About/>
-        {/* <Portfolio /> */}
+        <Portfolio />
         <Experience />
         <SocialLinks/>
         <Contact/>

@@ -14,14 +14,29 @@ function Home() {
 
             <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
                 <div className='flex flex-col justify-center h-full'>
-                    <h2 className='text-4xl sm:text-7xl font-bold'>
-                        <Typewriter 
-                            onInit ={(typewriter) => {
-                                typewriter
-                                    .typeString('I am an aspiring Full Stack Developer >_')
-                                    .start();
-                                    }}
-                        />
+                    <div className='pb-8 relative'>
+                        <div className='relative inline-block'>
+                            <p className='text-4xl font-bold inline border-b-4 '>
+                                <Typewriter 
+                                    onInit ={(typewriter) => {
+                                        typewriter
+                                        .typeString('Profile')
+                                        .pauseFor(3000)
+                                        .deleteAll()
+                                        .typeString('Profile')
+                                        .start();
+                                        }}
+                                        options={{
+                                            cursor: '>_'
+                                        }}
+                                />
+                            </p>
+                            <span className='border-b-4 border-gray-500 absolute left-0 w-full'></span>
+                        </div>
+                        
+                    </div>
+                    <h2 className='text-4xl sm:text-7xl font-bold pt-2'>
+                        I am an aspiring Full Stack Developer
                     </h2>
                     <p className='text-gray-500 py-4 max-w-md'>
                     For 9 years, I've immersed myself in software exploration. 

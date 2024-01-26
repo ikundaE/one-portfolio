@@ -1,13 +1,30 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect';
 
 function About() {
+    
     return (
         <div name='about' className='w-full h-screen'>
             <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
                 <div className='pb-8'>
-                    <p className='text-4xl font-bold inline border-b-4 border-gray-500'>
-                        About
-                    </p>
+                <div className='relative inline-block'>
+                            <p className='text-4xl font-bold inline border-b-4'>
+                                <Typewriter 
+                                    onInit ={(typewriter) => {
+                                        typewriter
+                                        .typeString('About')
+                                        .pauseFor(7000)
+                                        .deleteAll()
+                                        .typeString('About')
+                                        .start();
+                                            }}
+                                        options={{
+                                            cursor: '>_'
+                                        }}
+                                />
+                            </p>
+                            <span className='border-b-4 border-gray-500 absolute left-0 w-full'></span>
+                        </div>
                 </div>
                 <p className='text-xl mt-20'>
                     In the pursuit of my undergraduate degree,

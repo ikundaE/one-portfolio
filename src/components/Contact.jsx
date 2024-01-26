@@ -1,4 +1,5 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect'
 
 function Contact() {
     return (
@@ -6,8 +7,25 @@ function Contact() {
         className='w-full h-screen p-4 '>
             <div className='flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full'>
                 <div className='pb-8'>
-                    <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
-                    <p className='py-6'>Please submit to reach out</p>
+                <div className='relative inline-block'>
+                        <p className='text-4xl font-bold inline border-b-4'>
+                            <Typewriter 
+                                onInit ={(typewriter) => {
+                                    typewriter
+                                        .typeString('Contact')
+                                        .pauseFor(14000)
+                                        .deleteAll()
+                                        .typeString('Contact')
+                                        .start();
+                                        }}
+                                    options={{
+                                        cursor: '>_'
+                                    }}
+                            />
+                        </p>
+                        <span className='border-b-4 border-gray-500 absolute left-0 w-full'></span>
+                    </div>
+                    <p className='py-6'>Please engage a chat with me</p>
                 </div>
 
                 <div className='flex justify-center items-center' >

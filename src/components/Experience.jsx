@@ -12,6 +12,8 @@ import mongodb from '../assets/mongodb.png'
 import stripeImage from '../assets/stripe.png'
 import pythonImage from '../assets/python.png'
 import restImage from '../assets/rest.png'
+import Typewriter from 'typewriter-effect'
+
 function Experience() {
 
     const exp = [
@@ -100,9 +102,24 @@ function Experience() {
         <div name='experience' className=' w-full '>
             <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full '>
                 <div>
-                    <p className='text-4xl font-bold border-b-4 border-gray-500 p-2 inline'>
-                        Experience
-                    </p>
+                <div className='relative inline-block'>
+                        <p className='text-4xl font-bold inline border-b-4 '>
+                            <Typewriter 
+                                onInit ={(typewriter) => {
+                                    typewriter
+                                        .typeString('Experience')
+                                        .pauseFor(12000)
+                                        .deleteAll()
+                                        .typeString('Experience')
+                                        .start();
+                                        }}
+                                    options={{
+                                        cursor: '>_'
+                                    }}
+                            />
+                        </p>
+                        <span className='border-b-4 border-gray-500 absolute left-0 w-full'></span>
+                    </div>
                     <p className='py-6'>
                         These are the technologies that I have worked with
                     </p>
