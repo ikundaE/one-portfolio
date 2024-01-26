@@ -4,8 +4,8 @@ import Typewriter from 'typewriter-effect';
 function About() {
     
     return (
-        <div name='about' className='w-full h-screen'>
-            <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
+        <div name='about' className='w-full h-screen sm:mt-10'>
+            <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full '>
                 <div className='pb-8'>
                 <div className='relative inline-block'>
                             <p className='text-4xl font-bold inline border-b-4'>

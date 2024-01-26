@@ -38,28 +38,28 @@ function Portfolio() {
         },
     ]
     return (
-        <>
-            <div name='portfolio' className='w-full md:h-screen' >
+
+            <div name='portfolio' className='w-full md:h-screen ' >
                 <div className='max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full'>
-                    <div className='pb-8'>
-                    <div className='relative inline-block'>
-                        <p className='text-4xl font-bold inline border-b-4 '>
-                            <Typewriter 
-                                onInit ={(typewriter) => {
-                                    typewriter
-                                        .typeString('Portfolio')
-                                        .pauseFor(10000)
-                                        .deleteAll()
-                                        .typeString('Portfolio')
-                                        .start();
+                    <div name='title' className=''>
+                        <div className='relative inline-block'>
+                            <p className='text-4xl font-bold inline '>
+                                <Typewriter 
+                                    onInit ={(typewriter) => {
+                                        typewriter
+                                            .typeString('Portfolio')
+                                            .pauseFor(10000)
+                                            .deleteAll()
+                                            .typeString('Portfolio')
+                                            .start();
+                                            }}
+                                        options={{
+                                            cursor: '>_'
                                         }}
-                                    options={{
-                                        cursor: '>_'
-                                    }}
-                            />
-                        </p>
-                        <span className='border-b-4 border-gray-500 absolute left-0 w-full'></span>
-                    </div>
+                                />
+                            </p>
+                            <span className='border-b-4 border-gray-500 absolute left-0 w-full'></span>
+                        </div>
                         <p className='py-6'> Bellow is my previous work</p>
                     </div>
 
@@ -84,9 +84,8 @@ function Portfolio() {
                     </div>
                     
                 </div>
+                <ModalComponent open={modalIsOpen} onClose={()=> setModalIsOpen(false)}/>
             </div>
-            <ModalComponent open={modalIsOpen} onClose={()=> setModalIsOpen(false)}/>
-        </>
         
     ) 
 }

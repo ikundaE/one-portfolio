@@ -14,3 +14,7 @@
         font-family: 'Courier Prime', monospace;
     }
 }
+
+*:hover {
+    outline: 1px blue solid;
+}
