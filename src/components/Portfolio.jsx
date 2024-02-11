@@ -36,6 +36,7 @@ function Portfolio() {
             src: zork,
             repoLink:'https://github.com/burlingtoncodeacademy-students/zorkington-ikundaE'
         },
+        
     ]
     return (
 
@@ -60,7 +61,7 @@ function Portfolio() {
                             </p>
                             <span className='border-b-4 border-gray-500 absolute left-0 w-full'></span>
                         </div>
-                        <p className='py-6'> Bellow is my previous work</p>
+                        <p className='py-6'> Below is my previous work.</p>
                     </div>
 
                     <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
